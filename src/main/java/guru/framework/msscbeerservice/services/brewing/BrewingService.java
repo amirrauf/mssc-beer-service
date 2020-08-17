@@ -1,4 +1,4 @@
-package guru.framework.msscbeerservice.services;
+package guru.framework.msscbeerservice.services.brewing;
 
 import java.util.List;
 
