@@ -1,4 +1,4 @@
-package guru.framework.msscbeerservice.events;
+package guru.sfg.common.events;
 
 import java.io.Serializable;
 
