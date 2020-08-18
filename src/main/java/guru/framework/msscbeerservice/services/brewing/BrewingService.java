@@ -11,6 +11,7 @@ import guru.framework.msscbeerservice.domain.Beer;
 import guru.framework.msscbeerservice.repositories.BeerRepository;
 import guru.framework.msscbeerservice.services.inventory.BeerInventoryService;
 import guru.framework.msscbeerservice.web.mappers.BeerMapper;
+import guru.sfg.brewery.model.events.BrewBeerEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -34,7 +35,7 @@ public class BrewingService {
             log.debug("Inventory is: "  + invQOH);
             
             if (beer.getMinOnHand() >= invQOH) {
-            	jmsTemplate.convertAndSend(JmsConfig.BREWING_REQUEST_QUEUE, beerMapper.beerToBeerDto(beer));
+            	jmsTemplate.convertAndSend(JmsConfig.BREWING_REQUEST_QUEUE, new BrewBeerEvent(beerMapper.beerToBeerDto(beer)));
             }
     		
     	});
