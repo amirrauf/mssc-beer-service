@@ -4,9 +4,9 @@ import guru.framework.msscbeerservice.domain.Beer;
 import guru.framework.msscbeerservice.repositories.BeerRepository;
 import guru.framework.msscbeerservice.web.controller.NotFoundException;
 import guru.framework.msscbeerservice.web.mappers.BeerMapper;
-import guru.framework.msscbeerservice.web.model.BeerDto;
-import guru.framework.msscbeerservice.web.model.BeerPagedList;
-import guru.framework.msscbeerservice.web.model.BeerStyleEnum;
+import guru.sfg.brewery.model.BeerDto;
+import guru.sfg.brewery.model.BeerPagedList;
+import guru.sfg.brewery.model.BeerStyleEnum;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.cache.annotation.Cacheable;

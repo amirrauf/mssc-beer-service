@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import guru.framework.msscbeerservice.domain.Beer;
 import guru.framework.msscbeerservice.services.inventory.BeerInventoryService;
-import guru.framework.msscbeerservice.web.model.BeerDto;
+import guru.sfg.brewery.model.BeerDto;
 
 public class BeerMapperDecorator implements BeerMapper {
     private BeerInventoryService beerInventoryService;

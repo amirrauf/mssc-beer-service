@@ -3,8 +3,9 @@ package guru.framework.msscbeerservice.web.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import guru.framework.msscbeerservice.bootstrap.BeerLoader;
 import guru.framework.msscbeerservice.services.BeerService;
-import guru.framework.msscbeerservice.web.model.BeerDto;
-import guru.framework.msscbeerservice.web.model.BeerStyleEnum;
+import guru.sfg.brewery.model.BeerDto;
+import guru.sfg.brewery.model.BeerStyleEnum;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
